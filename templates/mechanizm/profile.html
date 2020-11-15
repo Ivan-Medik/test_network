@@ -1,0 +1,32 @@
+{% extends 'mechanizm\home.html' %}
+{% load static %}
+
+{% block title %}profile{% endblock title %}
+
+{% block body %}
+
+	<div class="profile-top">
+		<img class="profile-image" src="{% static 'home\me.jpg' %}" alt="me"/>
+
+		<div class="profile-informations">
+
+			<div class="profile-informations-item">
+
+				<a href="#">подписки</a>
+
+			</div>
+			<div class="profile-informations-item">
+
+				<a href="#">подписчики</a>
+
+			</div>
+			<div class="profile-informations-item">
+
+				<a href="#">публикации</a>
+
+			</div>
+
+		</div>
+	</div>
+
+{% endblock body %}

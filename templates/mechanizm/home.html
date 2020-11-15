@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static 'home\style_v2.css' %}">
+	<title>{% block title %}home{% endblock title %}</title>
+</head>
+<body>
+
+	<nav>
+
+		<div class="logo">
+
+			<a href="/">
+
+				<h4>SocTul</h4>
+
+			</a>
+
+		</div>
+
+		<div>
+
+			<form class="search">
+
+				<input type="text" placeholder="Поиск">
+
+			</form>
+
+		</div>
+
+		<ul class="nav-links">
+			<li>
+
+				<a href="/">
+
+					<img class="home-image" src="{% static 'home\home_v2.png' %}" alt="home"/>
+
+				</a>
+
+			</li>
+			<li>
+
+				<a href="#messages">
+
+					<img class="message-image" src="{% static 'home\Line_v4.png' %}" alt="messages"/>
+
+				</a>
+
+			</li>
+			<li>
+
+				<a href="#notifications">
+
+					<img class="notifications-image" src="{% static 'home\puls_v2.png' %}" alt="notifications"/>
+
+				</a>
+
+			</li>
+			<li>
+
+				<div class="select">
+		
+					<div class="select_header">
+					
+						<img class="me-image" src="{% static 'home\me.jpg' %}" alt="me"/>
+
+					</div>
+					
+				</div>
+
+			</li>
+		</ul>
+		
+		<div class="mobile-nav">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+
+	<div class="select_body">
+
+		<div class="select_item">
+			<a href="profile">Профиль</a>
+		</div>
+		<div class="select_item">
+			<a href="#customization">Настройки</a>
+		</div>
+		<div class="select_item">
+			<a href="#exit">Выйти</a>
+		</div>
+	</div>
+
+	{% block body %}
+
+	{% endblock body%}
+
+	<script src="{% static 'home\app.js' %}"></script>
+</body>
+</html>
+
+
+<!--#06141C-->

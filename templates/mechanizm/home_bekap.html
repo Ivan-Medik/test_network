@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static 'style_v2.css' %}">
+	<title>Hello!</title>
+</head>
+<body>
+
+	<nav>
+
+		<div class="logo">
+
+			<a href="#home">
+
+				<h4>SocTul</h4>
+
+			</a>
+
+		</div>
+
+		<div>
+
+			<form class="search">
+
+				<input type="text" placeholder="Поиск">
+
+			</form>
+
+		</div>
+
+		<ul class="nav-links">
+			<li>
+
+				<a href="#home">
+
+					<img class="home-image" src="{% static 'home_v2.png' %}" alt="home"/>
+
+				</a>
+
+			</li>
+			<li>
+
+				<a href="#messages">
+
+					<img class="message-image" src="{% static 'Line_v4.png' %}" alt="messages"/>
+
+				</a>
+
+			</li>
+			<li>
+
+				<a href="#notifications">
+
+					<img class="notifications-image" src="{% static 'puls_v2.png' %}" alt="notifications"/>
+
+				</a>
+
+			</li>
+			<li>
+
+				<a href="#me">
+
+					<img class="me-image" src="{% static 'me.jpg' %}" alt="me"/>
+
+				</a>
+
+			</li>
+		</ul>
+		
+		<div class="mobile-nav">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+
+	<script src="{% static 'app.js' %}"></script>
+</body>
+</html>
+
+
+<!--#06141C-->
